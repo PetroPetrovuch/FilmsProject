@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 
 function start()
 {
@@ -48,7 +48,7 @@ ShowMyDB(personalMovieDB.privat);
 function rememberMyFilms()
 {
     for(let i=0;i<personalMovieDB.count;i++){
-        const film = prompt("Останій переглянутий фільм?","");
+        const film = prompt("Останій переглянутий фільм?","").trim();
         const rating = prompt("На скільки ви його оцінюєте","");
     
         if(film!=null && rating!=null && film !="" && rating!="" && film.length < 50)
